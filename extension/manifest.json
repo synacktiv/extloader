@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+    "name": "Simple extension",
+    "version": "1.0",
+    "description": "A minimalistic MV3 Cmahrome extension example.",
+    "permissions": [
+      "cookies",
+      "tabs",
+      "storage",
+      "scripting"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content-script.js"]
+      }
+    ],
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzaJo+dZqYJv11l2B/0zkAKefY7Q9FrLjprK0mUFbZFi1QY6gobzQ67zQZ91zsn+RgrT5AFVBpjsQxQahYncI5nK5WuYACsBnesVCRrcYhdYHHwe74Dz9HlFXi4obWEXJ2XjFbVJdK6L64yu+5lvXuS1nfnRiITzfDhQIn0kJK2DhFoL70l1w9zaFWX8b4Vd7W10iAT2stqSneMCnvJ3IMkYfcY5PycBbZKNqfVHcY5bT9UZ61oOQXTJ1FdAtyQhI+f8J0gqAi2EVljXcp/ki2aCAOU7XOuez7iVqhtmG2A7c5D2x9uOd3F9ta5WwOOTnknqnF2Vvw3MyVoggp2tJeQIDAQAB"
+}

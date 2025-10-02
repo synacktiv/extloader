@@ -1,0 +1,28 @@
+[project]
+name = "extloader"
+version = "1.0.0"
+description = "Chrome extension toolkit"
+authors = [
+    {name = "Riadh B.", email = "riadh.bouchahoua@synacktiv.com"},
+]
+dependencies = [
+    "typer[all]>=0.9.0",
+    "rich>=10.0.0",
+    "impacket>=0.12.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[project.scripts]
+extloader = "extloader.cli:app"
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

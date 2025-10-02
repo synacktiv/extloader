@@ -1,0 +1,12 @@
+{
+  "extensions": {},
+  "protection": {
+    "macs": {
+      "extensions": {
+        "settings": {}
+      }
+    },
+    "ui": {},
+    "super_mac": ""
+  }
+}
