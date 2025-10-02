@@ -1,6 +1,8 @@
 # extLoader
 
-A small toolkit for managing and deploying Chromium extensions.
+A small toolkit for managing and deploying unpacked Chromium extensions.
+
+> Find out more in the following blogpost: https://www.synacktiv.com/en/publications/the-phantom-extension-backdooring-chrome-through-uncharted-pathways
 
 ## Installation
 
